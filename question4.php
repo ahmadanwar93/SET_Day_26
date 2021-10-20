@@ -23,13 +23,28 @@ function display(){
     }else{    
         $output = $inputText;
         if ($optionArr == 'name'){
-            echo 'My name is '.$output;
+            // echo 'My name is '.$output;
+            name($output);
         }else if ($optionArr == 'hobby'){
-            echo 'My hobby is '.$output;
+            // echo 'My hobby is '.$output;
+            hobby($output);
         }else if ($optionArr == 'club'){
-            echo 'My favorite club is '.$output;
+            // echo 'My favorite club is '.$output;
+            club($output);
         }
     }    
+}
+
+function name($para){
+    echo 'My name is '.$para;
+}
+
+function hobby($para){
+    echo 'My hobby is '.$para;
+}
+
+function club($para){
+    echo 'My favorite club is '.$para;
 }
 display();
 ?>    
